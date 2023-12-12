@@ -50,6 +50,7 @@ function PLUG.config()
     sources = { 'nvim_diagnostic' },
     symbols = { error = is.Error, warn = is.Warn, info = is.Info },
   }
+  vim.cmd("set laststatus=3")
 end
 
 return PLUG
