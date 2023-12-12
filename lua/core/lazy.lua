@@ -18,6 +18,7 @@ end
 
 lazy.setup {
   spec = {
+    { import = "plug" }
   },
 
   cache = { enabled = true },
