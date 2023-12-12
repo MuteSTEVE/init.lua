@@ -18,4 +18,4 @@ function PLUG.config()
   })
 end
 
-return PG
+return PLUG
