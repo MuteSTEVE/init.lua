@@ -20,6 +20,7 @@ lazy.setup {
   spec = {
     { import = "plug" },
     { import = "git" },
+    { import = "lsp" },
   },
 
   cache = { enabled = true },
