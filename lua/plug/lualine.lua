@@ -39,7 +39,7 @@ function PLUG.config()
       lualine_b = {'branch', 'diff', 'diagnostics'},
       lualine_c = { 'os.date(%)'},
       lualine_x = {
-        "os.date('%b %d %Y - %I %M %p')",
+        "os.date('%b %d %Y - %I:%M')",
         'encoding',
         'fileformat',
         'filetype',
