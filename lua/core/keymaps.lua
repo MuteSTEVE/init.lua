@@ -20,9 +20,9 @@ map('v', 'K', "<cmd>move '<-2<CR>gv-gv", opt)
 map('v', 'J', "<cmd>move '>+1<CR>gv-gv", opt)
 
 -- buffer movement
-map('n', 'Z', '<cmd>bp<CR>', opt)
-map('n', 'C', '<cmd>bn<CR>', opt)
-map('n', 'X', '<cmd>bd<CR>', opt)
+map('n', '<TAB>', '<cmd>bn<CR>', opt)
+map('n', '<S-TAB>', '<cmd>bp<CR>', opt)
+map('n', '<M-TAB>', '<cmd>bd<CR>', opt)
 
 -- Move between panes quickly
 map('n', '<C-h>', '<C-w>h', optf)
