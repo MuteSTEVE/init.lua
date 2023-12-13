@@ -36,13 +36,3 @@ map('i', '<C-k>', '<ESC>', optf)
 -- Indent
 map('v', '<', '<gv', optf)
 map('v', '>', '>gv', optf)
-
--- Automatically close brackets, parethesis, and quotes
-map("i", "'", "''<left>", opt)
-map("i", "\"", "\"\"<left>", opt)
-map("i", "(", "()<left>", opt)
-map("i", "[", "[]<left>", opt)
-map("i", "{", "{}<left>", opt)
-map("i", "{;", "{};<left><left>", opt)
-map("i", "/*", "/**/<left><left>", opt)
-
