@@ -72,9 +72,7 @@ function PLUG.config()
 
   local lsp_info = {
     function()
-      --local msg = "No Active Lsp"
-      local msg = "LS Inactive"
-      -- local buf_ft = vim.api.nvim_buf_get_option(0, "filetype")
+      local msg = "No Active Lsp"
       local buf_ft = vim.bo.filetype
       -- start register
       local buf_clients = vim.lsp.buf_get_clients()

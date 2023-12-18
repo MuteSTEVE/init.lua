@@ -106,8 +106,8 @@ function PLUG.config()
   if not icons_ok then
     return
   end
-  local is = icons.signs
-  local signs = { Error = is.Error, Warn = is.Warn, Hint = is.Hint, Info = is.Info }
+  local IS = icons.signs
+  local signs = { Error = IS.Error, Warn = IS.Warn, Hint = IS.Hint, Info = IS.Info }
   for type, icon in pairs(signs) do
     local hl = "DiagnosticSign" .. type
     vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })

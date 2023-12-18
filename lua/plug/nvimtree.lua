@@ -16,8 +16,8 @@ function PLUG.config()
   if not icons_ok then
     return
   end
-  local inv = icons.nvimtree
-  local igit = icons.git
+  local INVT = icons.nvimtree
+  local IG = icons.git
 
   nvim_tree.setup {
     disable_netrw = true,
@@ -45,23 +45,23 @@ function PLUG.config()
           git = true,
         },
         glyphs = {
-          default = inv.GlyphDefault,
-          symlink = inv.GlyphSymlink,
+          default = INVT.GlyphDefault,
+          symlink = INVT.GlyphSymlink,
           git = {
-            unstaged = igit.unstaged,
-            staged = igit.staged,
-            unmerged = igit.unmerged,
-            renamed = igit.renamed,
-            deleted = igit.deleted,
-            untracked = igit.untracked,
-            ignored = igit.ignored,
+            unstaged = IG.unstaged,
+            staged = IG.staged,
+            unmerged = IG.unmerged,
+            renamed = IG.renamed,
+            deleted = IG.deleted,
+            untracked = IG.untracked,
+            ignored = IG.ignored,
           },
           folder = {
-            default = inv.default,
-            open = inv.open,
-            empty = inv.empty,
-            empty_open = inv.empty_open,
-            symlink = inv.symlink,
+            default = INVT.default,
+            open = INVT.open,
+            empty = INVT.empty,
+            empty_open = INVT.empty_open,
+            symlink = INVT.symlink,
           },
         }
       }

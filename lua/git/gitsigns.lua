@@ -12,15 +12,15 @@ function PLUG.config()
   if not icons_ok then
     return
   end
-  local igit = icons.git
+  local IG = icons.git
 
   gitsigns.setup {
     signs = {
-      add = { hl = "GitSignsAdd", text = igit.signs, numhl = "GitSignsAddNr", linehl = "GitSignsAddLn" },
-      change = { hl = "GitSignsChange", text = igit.signs, numhl = "GitSignsChangeNr", linehl = "GitSignsChangeLn" },
-      delete = { hl = "GitSignsDelete", text = igit.signs, numhl = "GitSignsDeleteNr", linehl = "GitSignsDeleteLn" },
-      topdelete = { hl = "GitSignsDelete", text = igit.signs, numhl = "GitSignsDeleteNr", linehl = "GitSignsDeleteLn" },
-      changedelete = { hl = "GitSignsChange", text = igit.signs, numhl = "GitSignsChangeNr", linehl = "GitSignsChangeLn" },
+      add = { hl = "GitSignsAdd", text = IG.signs, numhl = "GitSignsAddNr", linehl = "GitSignsAddLn" },
+      change = { hl = "GitSignsChange", text = IG.signs, numhl = "GitSignsChangeNr", linehl = "GitSignsChangeLn" },
+      delete = { hl = "GitSignsDelete", text = IG.signs, numhl = "GitSignsDeleteNr", linehl = "GitSignsDeleteLn" },
+      topdelete = { hl = "GitSignsDelete", text = IG.signs, numhl = "GitSignsDeleteNr", linehl = "GitSignsDeleteLn" },
+      changedelete = { hl = "GitSignsChange", text = IG.signs, numhl = "GitSignsChangeNr", linehl = "GitSignsChangeLn" },
     },
   }
 end

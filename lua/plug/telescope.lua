@@ -19,12 +19,12 @@ function PLUG.config()
   if not icons_ok then
     return
   end
-  local it = icons.telescope
+  local ITL = icons.telescope
 
   telescope.setup {
     defaults = {
-      prompt_prefix = it.find .. " ",
-      selection_caret = it.select .. " ",
+      prompt_prefix = ITL.find .. " ",
+      selection_caret = ITL.select .. " ",
       mappings = {
         i = {
           ["<C-j>"] = actions.move_selection_next,

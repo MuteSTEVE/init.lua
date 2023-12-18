@@ -14,17 +14,17 @@ function PLUG.config()
   if not icons_ok then
     return
   end
-  local icl = icons.lspsaga
+  local IL = icons.lspsaga
 
   lspsaga.setup { -- defaults ...
     debug = false,
     use_saga_diagnostic_sign = true,
     -- diagnostic sign
-    error_sign = icl.error_sign,
-    warn_sign = icl.warn_sign,
-    hint_sign = icl.hint_sign,
-    infor_sign = icl.infor_sign,
-    diagnostic_header_icon = icl.diagnostic_header_icon,
+    error_sign = IL.error_sign,
+    warn_sign = IL.warn_sign,
+    hint_sign = IL.hint_sign,
+    infor_sign = IL.infor_sign,
+    diagnostic_header_icon = IL.diagnostic_header_icon,
     -- code action title icon
     code_action_icon = " ",
     code_action_prompt = {
@@ -33,8 +33,8 @@ function PLUG.config()
       sign_priority = 40,
       virtual_text = true,
     },
-    finder_definition_icon = icl.finder_definition_icon,
-    finder_reference_icon = icl.finder_reference_icon,
+    finder_definition_icon = IL.finder_definition_icon,
+    finder_reference_icon = IL.finder_reference_icon,
     max_preview_lines = 10,
     finder_action_keys = {
       open = "o",
@@ -52,9 +52,9 @@ function PLUG.config()
       quit = "<C-c>",
       exec = "<CR>",
     },
-    definition_preview_icon = icl.definition_preview_icon,
+    definition_preview_icon = IL.definition_preview_icon,
     border_style = "single",
-    rename_prompt_prefix = icl.rename_prompt_prefix,
+    rename_prompt_prefix = IL.rename_prompt_prefix,
     rename_output_qflist = {
       enable = false,
       auto_open_qflist = false,
