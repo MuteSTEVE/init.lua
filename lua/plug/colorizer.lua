@@ -1,6 +1,5 @@
 local PLUG = {
   'norcalli/nvim-colorizer.lua',
-  event = { "BufReadPost", "BufNewFile" },
   lazy = true,
   cmd = "Colorizer",
   ft = { "css", "html", "php", "js", },
