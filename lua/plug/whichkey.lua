@@ -87,7 +87,7 @@ function PLUG.config()
   local mappings = {
     u = { "<cmd>lua require('undotree').toggle()<cr>", "Undotree" },
     x = { "<cmd>!chmod +x %<CR>", "Make executable"  },
-    m = { "<cmd>lua _NCMPCPP_TOGGLE()<cr>", "Ncmpcpp mpd" },
+    m = { "<cmd>Ncmpcpp<cr>", "Ncmpcpp music player" },
     M = { "<cmd>Mason<cr>", "Mason LSP"},
     g = { "<cmd>LazyGit<cr>", "LazyGit" },
     b = {
