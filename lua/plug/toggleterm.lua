@@ -2,7 +2,6 @@ local PLUG = {
   'akinsho/toggleterm.nvim',
   lazy = true,
   cmd = "ToggleTerm",
-  event = { "BufReadPost", "BufNewFile" },
   keys = {
     { "<A-m>", "<cmd>Ncmpcpp<CR>" },
     { "<A-f>", "<cmd>ToggleTerm direction=float<cr>"},
@@ -10,6 +9,7 @@ local PLUG = {
     { "<A-v>", "<cmd>ToggleTerm size=60 direction=vertical<cr>" }
   }
 }
+
 function PLUG.config()
   local toggleterm_ok, toggleterm = pcall(require, "toggleterm")
   if not toggleterm_ok then
@@ -17,13 +17,8 @@ function PLUG.config()
   end
 
   toggleterm.setup({
-    size = 30,
     open_mapping = [[<A-f>]],
-    shade_filetypes = {},
-    shade_terminals = true,
-    shading_factor = 1,
     start_in_insert = true,
-    persist_size = true,
     direction = 'float',
     float_opts = { border = "curved" }
   })

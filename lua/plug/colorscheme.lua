@@ -13,12 +13,8 @@ function PLUG.config()
   onedark.setup({
     style = 'warmer',
     transparent = true,
-    code_style = {
-      comments = 'italic',
-    },
-    lualine = {
-      transparent = true, -- lualine center bar transparency
-    },
+    code_style = { comments = 'italic' },
+    lualine = { transparent = true },
     diagnostics = {
       darker = true, -- darker colors for diagnostic
       undercurl = true,   -- use undercurl instead of underline for diagnostics

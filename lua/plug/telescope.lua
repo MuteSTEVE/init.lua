@@ -2,7 +2,6 @@ local PLUG = {
   'nvim-telescope/telescope.nvim',
   dependencies = 'nvim-lua/plenary.nvim',
   lazy = true,
-  event = { "BufReadPost", "BufNewFile" },
   cmd = "Telescope",
 }
 
