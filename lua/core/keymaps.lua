@@ -36,3 +36,15 @@ map('i', '<C-k>', '<ESC>', optf)
 -- Indent
 map('v', '<', '<gv', optf)
 map('v', '>', '>gv', optf)
+
+-- moving the cursor in insert mode
+map('i', '<C-h>', '<Left>', opt)
+map('i', '<C-l>', '<Right>', opt)
+
+-- exiting terminal insert mode and automatically moving different pane asynchronously
+map('n', '<A-q>', '<cmd>q!<CR>', opt)
+map('t', '<ESC>', '<C-\\><C-n>', opt)
+map('t', '<C-h>', '<C-\\><C-n><C-w>h', optf)
+map('t', '<C-l>', '<C-\\><C-n><C-w>l', optf)
+map('t', '<C-j>', '<C-\\><C-n><C-w>j', optf)
+map('t', '<C-k>', '<C-\\><C-n><C-w>k', optf)

@@ -116,6 +116,7 @@ function PLUG.config()
         "Outline",
         "lazy",
         "mason",
+        "toggleterm",
       },
       always_divide_middle = true,
     },
@@ -131,6 +132,7 @@ function PLUG.config()
             hint = IS.Hint .. " ",
             info = IS.Info .. " ",
           },
+          sections = { 'error', 'warn', 'info', 'hint' },
           colored = true,
         }
       },
