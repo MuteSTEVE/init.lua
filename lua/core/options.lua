@@ -1,6 +1,6 @@
 local options = {
   backup = false,
-  cmdheight = 1,
+  cmdheight = 0,
   completeopt = { "menuone", "noselect" },
   conceallevel = 0,
   fileencoding = "utf-8",
@@ -43,3 +43,9 @@ vim.opt.shortmess:append "c"
 vim.opt.iskeyword:append "-"
 vim.opt.formatoptions:remove({ "c", "r", "o" })
 vim.opt.runtimepath:remove("/usr/share/vim/vimfiles")
+
+vim.o.guicursor = table.concat({
+  "n-v-c:block-Cursor/lCursor-blinkwait1000-blinkon100-blinkoff100",
+  "i-ci:ver25-Cursor/lCursor-blinkwait1000-blinkon100-blinkoff100",
+  "r:hor50-Cursor/lCursor-blinkwait100-blinkon100-blinkoff100"
+}, ",")
