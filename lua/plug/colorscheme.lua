@@ -1,10 +1,18 @@
-local PLUG = {
+-- onedark colorscheme
+local ONEDARK = {
   'navarasu/onedark.nvim',
   lazy = false,
   priority = 1000,
 }
 
-function PLUG.config()
+-- vscode colorscheme
+local VSCODE = {
+  'LunarVim/darkplus.nvim',
+  lazy = false,
+  priority = 1000
+}
+
+function ONEDARK.config()
   local onedark_ok, onedark = pcall(require, 'onedark')
   if not onedark_ok then
     return
@@ -26,4 +34,8 @@ function PLUG.config()
   vim.cmd('colorscheme onedark')
 end
 
-return PLUG
+function VSCODE.config()
+  vim.cmd("colorscheme darkplus")
+end
+
+return VSCODE
