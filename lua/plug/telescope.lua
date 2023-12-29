@@ -18,6 +18,7 @@ function PLUG.config()
   if not icons_ok then
     return
   end
+  telescope.load_extension("noice")
   local ITL = icons.telescope
 
   telescope.setup {

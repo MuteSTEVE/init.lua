@@ -15,6 +15,7 @@ function PLUG.config()
   end
 
   navbuddy.setup({
+    border = "rounded",
     lsp = { auto_attach = true },
 
     mappings = {

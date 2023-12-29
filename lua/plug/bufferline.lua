@@ -21,7 +21,7 @@ function PLUG.config()
     options = {
       indicator = { style = 'none' },
       modified_icon = '+',
-      tab_size = 10,
+      tab_size = 15,
       offsets = {
         {
           filetype = 'NvimTree',

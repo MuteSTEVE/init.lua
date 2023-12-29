@@ -1,6 +1,6 @@
 local PLUG = {
   'neovim/nvim-lspconfig',
-  event = { "BufReadPost", "BufNewFile", },
+  event = { "BufReadPost", "BufNewFile" },
 }
 
 function PLUG.config()
@@ -28,8 +28,6 @@ function PLUG.config()
     'cssls',
     'cssmodules_ls',
     'unocss',
-    'phpactor',
-    'intelephense',
     'tsserver',
     'pylsp',
     'lua_ls',
@@ -56,14 +54,6 @@ function PLUG.config()
       "eruby",
       "html",
       "javascript",
-      "javascriptreact",
-      "less",
-      "sass",
-      "scss",
-      "svelte",
-      "pug",
-      "typescriptreact",
-      "vue"
     },
     init_options = {
       html = {

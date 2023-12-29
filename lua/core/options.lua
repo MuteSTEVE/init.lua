@@ -1,6 +1,6 @@
 local options = {
   backup = false,
-  cmdheight = 0,
+  cmdheight = 1,
   completeopt = { "menuone", "noselect" },
   conceallevel = 0,
   fileencoding = "utf-8",
