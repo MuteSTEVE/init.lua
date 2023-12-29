@@ -106,6 +106,7 @@ function PLUG.config()
     },
     F = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
     H = { "<cmd>Telescope oldfiles theme=ivy<cr>", "Open [r]ecent file" },
+    N = { "<cmd>Navbuddy<cr>", "Navbuddy" },
 
     l = {
       name = "LSP",
