@@ -19,10 +19,14 @@ return {
     staged = "S",
     unmerged = "",
     renamed = "➜",
+    added = " ",
+    modified = '󰙦 ',
+    removed = ' ',
     deleted = "",
     untracked = "U",
     ignored = "◌",
-    signs = "▌"
+    signs = "▌",
+    branch = ""
   },
 
   kind_icons = {
@@ -81,6 +85,7 @@ return {
 
   lualine = {
     gear = " ",
+    vert =  "▊",
     __1 = "▁▁",
     __2 = "▂▂",
     __3 = "▃▃",

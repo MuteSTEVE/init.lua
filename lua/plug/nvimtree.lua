@@ -34,7 +34,7 @@ function PLUG.config()
       relativenumber = false,
     },
     renderer = {
-      indent_markers = { enable = true },
+      indent_markers = { enable = false },
       root_folder_modifier = ":t",
       highlight_git = true,
       icons = {

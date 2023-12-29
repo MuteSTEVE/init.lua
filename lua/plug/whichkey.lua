@@ -105,6 +105,7 @@ function PLUG.config()
       "Find files",
     },
     F = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
+    H = { "<cmd>Telescope oldfiles theme=ivy<cr>", "Open [r]ecent file" },
 
     l = {
       name = "LSP",

@@ -17,6 +17,8 @@ function PLUG.config()
     return
   end
   local IL = icons.lualine
+  local IGIT = icons.git
+  local IS = icons.signs
 
   -- Color table for highlights
   -- stylua: ignore
@@ -24,15 +26,6 @@ function PLUG.config()
     bg       = '#007ACC',
     fg       = '#bbc2cf',
     white    = '#FFFFFF',
-    yellow   = '#ECBE7B',
-    cyan     = '#008080',
-    darkblue = '#081633',
-    green    = '#98be65',
-    orange   = '#FF8800',
-    violet   = '#a9a1e1',
-    magenta  = '#c678dd',
-    blue     = '#51afef',
-    red      = '#ec5f67',
   }
 
   local conditions = {
@@ -106,7 +99,7 @@ function PLUG.config()
 
   ins_left {
     function()
-      return '▊'
+      return IL.vert
     end,
     color = { fg = colors.bg },
     padding = { left = 1 },
@@ -114,14 +107,26 @@ function PLUG.config()
 
   ins_left {
     'branch',
-    icon = '',
+    icon = IGIT.branch,
     color = { fg = colors.white, gui = 'bold' },
+  }
+
+  ins_left {
+    'diagnostics',
+    sources = { 'nvim_diagnostic' },
+    sections = { "error", "warn" },
+    symbols = { error = IS.Error, warn = IS.Warn },
+    always_visible = true,
+    diagnostics_color = {
+      error = { fg = colors.white, gui = 'bold' },
+      warn = { fg = colors.white, gui = 'bold' },
+    },
   }
 
   ins_left {
     'diff',
     -- Is it me or the symbol for modified us really weird
-    symbols = { added = ' ', modified = '󰙦 ', removed = ' ' },
+    symbols = { added = IGIT.added, modified = IGIT.modified, removed = IGIT.removed },
     always_visible = true,
     diff_color = {
       added = { fg = colors.white, gui = 'bold' },
@@ -129,18 +134,6 @@ function PLUG.config()
       removed = { fg = colors.white, gui = 'bold' },
     },
     cond = conditions.hide_in_width,
-  }
-
-  ins_left {
-    'diagnostics',
-    sources = { 'nvim_diagnostic' },
-    sections = { "error", "warn" },
-    symbols = { error = ' ', warn = ' ' },
-    always_visible = true,
-    diagnostics_color = {
-      error = { fg = colors.white, gui = 'bold' },
-      warn = { fg = colors.white, gui = 'bold' },
-    },
   }
 
   -- Insert mid section. You can make any number of sections in neovim :)
@@ -170,7 +163,7 @@ function PLUG.config()
       return msg
     end,
     icon = IL.gear,
-    color = { fg = '#ffffff', gui = 'bold' },
+    color = { fg = colors.white, gui = 'bold' },
   }
 
   ins_right {
@@ -203,7 +196,7 @@ function PLUG.config()
 
   ins_right {
     function()
-      return '▊'
+      return IL.vert
     end,
     color = { fg = colors.bg },
     padding = { left = 1 },
