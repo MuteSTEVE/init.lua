@@ -28,15 +28,15 @@ function PLUG.config()
   if not luasnip_ok then
     return
   end
-  local icons_ok, icons = pcall(require, 'core.icons')
-  if not icons_ok then
-    return
-  end
   local snip_ok, snip = pcall(require, "luasnip/loaders/from_vscode")
   if not snip_ok then
     return
   end
   snip.lazy_load()
+  local icons_ok, icons = pcall(require, 'core.icons')
+  if not icons_ok then
+    return
+  end
 
   local check_backspace = function()
     local col = vim.fn.col "." - 1
@@ -45,32 +45,32 @@ function PLUG.config()
 
   local IK = icons.kind_icons
   local kind_icons = {
-    Text = IK.Text,
-    Method = IK.Method,
-    Function = IK.Function,
-    Constructor = IK.Constructor,
-    Field = IK.Field,
-    Variable = IK.Variable,
     Class = IK.Class,
+    Color = IK.Color,
+    Constant = IK.Constant,
+    Constructor = IK.Constructor,
+    Enum = IK.Enum,
+    EnumMember = IK.EnumMember,
+    Event = IK.Event,
+    Field = IK.Field,
+    File = IK.File,
+    Folder = IK.Folder,
+    Function = IK.Function,
     Interface = IK.Interface,
+    Keyword = IK.Keyword,
+    Method = IK.Method,
     Module = IK.Module,
+    Namespace = "",
+    Operator = IK.Operator,
     Property = IK.Property,
+    Reference = IK.Reference,
+    Snippet = IK.Snippet,
+    Struct = IK.Struct,
+    Text = IK.Text,
+    TypeParameter = IK.TypeParameter,
     Unit = IK.Unit,
     Value = IK.Value,
-    Enum = IK.Enum,
-    Keyword = IK.Keyword,
-    Snippet = IK.Snippet,
-    Color = IK.Color,
-    File = IK.File,
-    Reference = IK.Reference,
-    Folder = IK.Folder,
-    EnumMember = IK.EnumMember,
-    Constant = IK.Constant,
-    Struct = IK.Struct,
-    Event = IK.Event,
-    Operator = IK.Operator,
-    TypeParameter = IK.TypeParameter,
-    Misc = IK.Misc,
+    Variable = IK.Variable,
   }
 
   local mappings = {
