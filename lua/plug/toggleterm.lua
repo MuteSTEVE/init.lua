@@ -27,7 +27,7 @@ function PLUG.config()
 
   local map = vim.api.nvim_set_keymap
   local nr = { noremap = true, silent = true }
-  map('t', '<ESC>', '<C-\\><C-n>', nr)
+  map('t', '<S-ESC>', '<C-\\><C-n>', nr)
   map('t', '<C-h>', '<C-\\><C-n><C-w>h', nr)
   map('t', '<C-l>', '<C-\\><C-n><C-w>l', nr)
   map('t', '<C-j>', '<C-\\><C-n><C-w>j', nr)
