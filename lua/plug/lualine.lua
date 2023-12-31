@@ -76,15 +76,6 @@ function PLUG.config()
       lualine_c = {},
       lualine_x = {},
     },
-    inactive_sections = {
-      -- these are to remove the defaults
-      lualine_a = {},
-      lualine_b = {},
-      lualine_y = {},
-      lualine_z = {},
-      lualine_c = {},
-      lualine_x = {},
-    },
   }
 
   -- Inserts a component in lualine_c at left section
@@ -168,13 +159,13 @@ function PLUG.config()
 
   ins_right {
     'fileformat',
-    fmt = string.upper,
     icons_enabled = true, -- I think icons are cool but Eviline doesn't have them. sigh
     color = { fg = colors.white, gui = 'bold' },
   }
 
   ins_right {
     'encoding', -- option component same as &encoding in viml
+    fmt = string.upper,
     cond = conditions.hide_in_width,
     color = { fg = colors.white, gui = 'bold' },
   }

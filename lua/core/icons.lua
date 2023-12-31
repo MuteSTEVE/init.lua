@@ -51,7 +51,7 @@ return {
     Namespace = "",
     Null = "",
     Number = "󰎠",
-    Object = " ",
+    Object = "",
     Operator = "󰆕",
     Package = "",
     Property = "",

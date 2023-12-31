@@ -20,8 +20,7 @@ function PLUG.config()
   bufferline.setup {
     options = {
       indicator = { style = 'none' },
-      modified_icon = '+',
-      tab_size = 15,
+      tab_size = 10,
       offsets = {
         {
           filetype = 'NvimTree',

@@ -32,11 +32,6 @@ function PLUG.config()
     custom_section = function() return " " end,
     theme = "auto",
     context_follow_icon_color = false,
-    symbols = {
-      modified = "+",
-      ellipsis = "…",
-      separator = "",
-    },
     kinds = {
       Array = IK.Array,
       Boolean = IK.Boolean,
